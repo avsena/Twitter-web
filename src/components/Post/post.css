@@ -1,0 +1,16 @@
+.post__content {
+  flex-grow: 1;
+}
+
+.post__text {
+  word-break: break-word;
+  cursor: text;
+}
+
+.post__icons:first-child {
+  margin-left: -0.5rem;
+}
+
+[contentEditable=true]:empty:before {
+  content: attr(data-placeholder)
+}

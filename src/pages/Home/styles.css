@@ -1,0 +1,20 @@
+.page {
+  display: grid;
+  grid-template-rows: 1fr auto;
+
+  height: 100vh;
+}
+
+.page__container {}
+
+.page__left {
+  width: 275px;
+}
+
+.page__center {
+  max-width: 600px;
+}
+
+.page__right {
+  width: 400px;
+}
