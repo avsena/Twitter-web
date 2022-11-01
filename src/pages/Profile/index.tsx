@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
+import { Follow } from "../../components/Follow/Follow";
+import { Footer } from "../../components/Footer/Footer";
 import { Header } from "../../components/Header/Header";
 import { Heading } from "../../components/Heading/Heading";
-import { Follow } from "../../components/Follow/Follow";
 import { List } from "../../components/List/List";
 import { NewsItem } from "../../components/NewsItem/NewsItem";
 import { Post } from "../../components/Post/Post";
@@ -11,12 +12,10 @@ import { Spacer } from "../../components/Spacer/Spacer";
 import { Text } from "../../components/Text/Text";
 import { Tweet, TweetProps } from "../../components/Tweet/Tweet";
 import { useFeed } from "../../context/FeedContext/FeedContext";
-import { Footer } from "../../components/Footer/Footer";
-import { Profile as ProfileProps } from "../../components/Profile/Profile";
 
 import './styles.css';
 
-export function Profile() {
+export function Home() {
   const { tweets, setTweets } = useFeed();
 
   useEffect(() => {
@@ -27,7 +26,7 @@ export function Profile() {
     <div className="page overflow-y-auto">
       <main className="page__container flex justify-center bg-white dark:bg-dark-1">
         <div className="page__left">
-          <Sidemenu currentPage="profile" />
+          <Sidemenu currentPage="home" />
         </div>
 
         <div className="page__center border-x-2 border-x-dark-7 dark:border-x-dark-4">
@@ -121,7 +120,7 @@ export function Profile() {
               />
             </List>
 
-            <Text color="gray">Terms of Service Privacy Policy Cookie Policy Ads info More © 2021 Twitter, Inc.</Text>
+            <Text color="gray">PROFILE: Terms of Service Privacy Policy Cookie Policy Ads info More © 2021 Twitter, Inc.</Text>
           </div>
         </div>
       </main>
