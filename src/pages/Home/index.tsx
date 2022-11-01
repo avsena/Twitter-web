@@ -57,31 +57,23 @@ export function Home() {
           }
 
           <Tweet
+            name="Devon Lane"
             description="Tom is a big hurry."
-            img="src/imgs/feed-1.png"
-            name="Darlene Robertson"
+            img="src/imgs/Container.png"
             profilePic="src/imgs/profile-pic-4.png"
             time="23s"
             user="@johndoe"
           />
 
           <Tweet
+            name="Darlene Robertson"
             description="Tom is a big hurry."
-            img="src/imgs/feed-2.png"
-            name="Devon Lane"
+            img="src/imgs/Placehpolder.png"
             profilePic="src/imgs/profile-pic-5.png"
             time="23s"
             user="@johndoe"
           />
 
-          <Tweet
-            description="Tom is a big hurry."
-            img="src/imgs/feed-3.jpg"
-            name="Darlene Lane"
-            profilePic="src/imgs/profile-pic-2.png"
-            time="23s"
-            user="@johndoe"
-          />
         </div>
 
         <div className="page__right">
