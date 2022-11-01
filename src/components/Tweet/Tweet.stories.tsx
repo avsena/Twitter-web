@@ -9,7 +9,7 @@ export default {
     user: '@johndoe',
     time: '23s',
     description: 'Tom is a big hurry.',
-    img: 'src/imgs/feed-1.png',
+    img: 'src/imgs/Container.png',
     profilePic: 'src/imgs/profile-pic-4.png'
   }
 } as Meta<TweetProps>
