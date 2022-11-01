@@ -5,7 +5,7 @@ export default {
   title: 'Components/Profile',
   component: Profile,
   args: {
-    banner: 'src/imgs/feed-1.png',
+    banner: 'src/imgs/banner.png',
     profilePic: 'src/imgs/profile-pic-1.png',
     name: 'Davide Biscuso',
     user: '@biscuttu',
