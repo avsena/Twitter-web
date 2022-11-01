@@ -13,7 +13,7 @@ export interface NavlinkProps {
 export function Navlink({ icon, iconFill, children, active }: NavlinkProps) {
   return (
     <span>
-      <a href="#" className="inline-flex gap-x-5 hover:bg-flutuar focus:bg-dark-6/30 rounded-full p-2.5 pr-7">
+      <a href="#" className="inline-flex gap-x-5 focus:bg-dark-7 /30 rounded-full p-2.5 pr-7">
         <Icon icon={ active ? iconFill : icon } color={ active ? 'blue' : 'black' } />
         <Heading color={ active ? 'blue' : 'black' }>{ children }</Heading>
       </a>
