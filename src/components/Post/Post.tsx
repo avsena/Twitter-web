@@ -23,7 +23,6 @@ export function Post({ img }: PostProps) {
     const target = evt.currentTarget;
     const text = target.textContent || '';
 
-    // When the limit is reached only allow a list of specific keys and combinations with the ctrl key
     if ((Number(text?.length) > characterLimit) && (allowedKeys.indexOf(evt.key) < 0) && !evt.ctrlKey) {
       evt.preventDefault();
     }
@@ -92,7 +91,7 @@ export function Post({ img }: PostProps) {
           onKeyUp = { (evt) => setIsEmpty( evt.currentTarget.textContent?.length === 0 ) }
           contentEditable
           suppressContentEditableWarning
-          data-placeholder="What's happening"
+          data-placeholder="What's happening?"
         />
 
         { selectedImage &&
@@ -109,28 +108,28 @@ export function Post({ img }: PostProps) {
           <div className="post__icons flex items-center gap-x-4">
             <label className='cursor-pointer rounded-full box-border p-2 duration-150 hover:bg-blue-1/10 active:bg-blue-1/20'>
               <input type="file" accept='image/png, image/jpeg' className='hidden' onChange={(evt) => handleUploadImage(evt)} />
-              <Icon icon='media' color='blue' size='1.5rem' />
+              <Icon icon='media' color='blue' size='1.2rem' />
             </label>
 
             <div className='cursor-pointer rounded-full box-border p-2 duration-150 hover:bg-blue-1/10 active:bg-blue-1/20'>
-              <Icon icon='gif' color='blue' size='1.5rem' />
+              <Icon icon='gif' color='blue' size='1.2rem' />
             </div>
 
             <div className='cursor-pointer rounded-full box-border p-2 duration-150 hover:bg-blue-1/10 active:bg-blue-1/20'>
-              <Icon icon='poll' color='blue' size='1.5rem' />
+              <Icon icon='poll' color='blue' size='1.2rem' />
             </div>
 
             <div className='cursor-pointer rounded-full box-border p-2 duration-150 hover:bg-blue-1/10 active:bg-blue-1/20'>
-              <Icon icon='emoji' color='blue' size='1.5rem' />
+              <Icon icon='emoji' color='blue' size='1.2rem' />
             </div>
 
             <div className='cursor-pointer rounded-full box-border p-2 duration-150 hover:bg-blue-1/10 active:bg-blue-1/20'>
-              <Icon icon='calendar' color='blue' size='1.5rem' />
+              <Icon icon='calendar' color='blue' size='1.2rem' />
             </div>
 
           </div>
 
-          <Button className={ `${isEmpty ? 'opacity-50' : 'opacity-100'}` } onClick={() => handleSubmit()}>Tweet</Button>
+          <Button className={ `${isEmpty ? 'opacity-25' : 'opacity-100'}` } onClick={() => handleSubmit()}>Tweet</Button>
         </div>
       </div>
     </div>
