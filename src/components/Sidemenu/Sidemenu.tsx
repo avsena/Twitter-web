@@ -22,6 +22,7 @@ export function Sidemenu({ currentPage }: SidemenuProps) {
             icon="home"
             iconFill="home-fill"
             active={ currentPage === 'home' }
+            page="/"
             >
             Home
           </Navlink>
@@ -30,6 +31,7 @@ export function Sidemenu({ currentPage }: SidemenuProps) {
             icon="explore"
             iconFill="explore-fill"
             active={ currentPage === 'explore' }
+            page="/"
             >
             Explore
           </Navlink>
@@ -38,6 +40,7 @@ export function Sidemenu({ currentPage }: SidemenuProps) {
             icon="notification"
             iconFill="notification-fill"
             active={ currentPage === 'notifications' }
+            page="/"
             >
             Notifications
           </Navlink>
@@ -46,6 +49,7 @@ export function Sidemenu({ currentPage }: SidemenuProps) {
             icon="message"
             iconFill="message-fill"
             active={ currentPage === 'messages' }
+            page="/"
             >
             Messages
           </Navlink>
@@ -54,6 +58,7 @@ export function Sidemenu({ currentPage }: SidemenuProps) {
             icon="bookmark"
             iconFill="bookmark-fill"
             active={ currentPage === 'bookmarks' }
+            page="/"
             >
             Bookmarks
           </Navlink>
@@ -62,6 +67,7 @@ export function Sidemenu({ currentPage }: SidemenuProps) {
             icon="lists"
             iconFill="lists-fill"
             active={ currentPage === 'lists' }
+            page="/"
             >
             Lists
           </Navlink>
@@ -70,6 +76,7 @@ export function Sidemenu({ currentPage }: SidemenuProps) {
             icon="profile"
             iconFill="profile-fill"
             active={ currentPage === 'profile' }
+            page="/profile"
             >
             Profile
           </Navlink>
@@ -78,6 +85,7 @@ export function Sidemenu({ currentPage }: SidemenuProps) {
             icon="more"
             iconFill="more"
             active={ currentPage === 'more' }
+            page="/"
             >
             More
           </Navlink>

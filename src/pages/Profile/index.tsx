@@ -15,7 +15,7 @@ import { useFeed } from "../../context/FeedContext/FeedContext";
 
 import './styles.css';
 
-export function Home() {
+export function Profile() {
   const { tweets, setTweets } = useFeed();
 
   useEffect(() => {
