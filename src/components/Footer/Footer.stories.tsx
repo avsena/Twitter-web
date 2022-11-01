@@ -19,11 +19,9 @@ export default {
     },
     style: {
       options: ['fill', 'outline'],
-      control: 'inline-radio'
     },
     color: {
       options: ['blue', 'white'],
-      control: 'inline-radio'
     }
   }
 } as Meta
