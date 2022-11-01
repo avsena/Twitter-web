@@ -49,7 +49,7 @@ export function Home() {
                 description={tweet.description}
                 img={tweet.img || ''}
                 name={tweet.name}
-                profilePic={tweet.profilePic}
+                profilePic={tweet.profilePics}
                 time={tweet.time}
                 user={tweet.user}
               />
@@ -101,7 +101,7 @@ export function Home() {
                 hashtag="#sport"
                 img="src/imgs/news-item-3.png"
                 subject="India"
-                time="1h ago"
+                time="23h ago"
               >
                 India vs Australia: India hold on to earn a draw on Day 5 in Sydney Test
               </NewsItem>

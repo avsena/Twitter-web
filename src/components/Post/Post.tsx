@@ -97,10 +97,6 @@ export function Post({ img }: PostProps) {
         { selectedImage &&
         <div className="post__preview flex justify-between items-center">
           <img src={URL.createObjectURL(selectedImage)} className="h-12" />
-
-          <Text color='gray' className='hover:underline cursor-pointer' asChild>
-            <span onClick={() => { setSelectedImage(null)}}>Remove</span>
-          </Text>
         </div>
         }
 
