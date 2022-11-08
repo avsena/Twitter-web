@@ -13,6 +13,7 @@ import { Text } from "../../components/Text/Text";
 import { Tweet, TweetProps } from "../../components/Tweet/Tweet";
 import { useFeed } from "../../context/FeedContext/FeedContext";
 
+
 import './styles.css';
 
 export function Profile() {
@@ -26,15 +27,19 @@ export function Profile() {
     <div className="page overflow-y-auto">
       <main className="page__container flex justify-center bg-white dark:bg-dark-1">
         <div className="page__left">
-          <Sidemenu currentPage="home" />
+          <Sidemenu currentPage="profile" />
         </div>
 
         <div className="page__center border-x-2 border-x-dark-7 dark:border-x-dark-4">
           <Header.Root>
+            <Header.LeftIcon />
+            <Header.Text>
             <Header.Text>
               <Heading>
-                Profile
+                Name
               </Heading>
+            </Header.Text>
+            9 Tweets
             </Header.Text>
             <Header.RightIcon />
           </Header.Root>
@@ -80,6 +85,19 @@ export function Profile() {
           <div className="flex flex-col gap-4 justify-start items-start py-2.5 px-7">
             <SearchBar />
 
+            <List title="You might like">
+              <Follow
+                img="src/imgs/profile-pic-2.png"
+                name="Bessie Cooper"
+                user="@alessandroveronezi"
+              />
+              <Follow
+                img="src/imgs/profile-pic-3.png"
+                name="Jenny Wilson"
+                user="@gabrielcantarin"
+              />
+            </List>
+
             <List title="What's happening">
               <NewsItem
                 hashtag="#covid19"
@@ -107,18 +125,7 @@ export function Profile() {
               </NewsItem>
             </List>
 
-            <List title="Who to follow">
-              <Follow
-                img="src/imgs/profile-pic-2.png"
-                name="Bessie Cooper"
-                user="@alessandroveronezi"
-              />
-              <Follow
-                img="src/imgs/profile-pic-3.png"
-                name="Jenny Wilson"
-                user="@gabrielcantarin"
-              />
-            </List>
+            
 
             <Text color="gray">PROFILE: Terms of Service Privacy Policy Cookie Policy Ads info More © 2021 Twitter, Inc.</Text>
           </div>
