@@ -49,7 +49,7 @@ export function Home() {
                 description={tweet.description}
                 img={tweet.img || ''}
                 name={tweet.name}
-                profilePic={tweet.profilePics}
+                profilePic={tweet.profilePic}
                 time={tweet.time}
                 user={tweet.user}
               />
@@ -57,21 +57,28 @@ export function Home() {
           }
 
           <Tweet
-            name="Devon Lane"
-            description="Tom is a big hurry."
-            img="src/imgs/Container.png"
-            profilePic="src/imgs/profile-pic-4.png"
-            time="23s"
-            user="@johndoe"
+            name="Designsta"
+            description="Twitterdagi ayol-erkak qarama-qarshiliginglardan o'zinglar zerikmadinglarmi?"
+            profilePic="src/imgs/designsta.png"
+            time="25m"
+            user="@inner"
           />
 
           <Tweet
-            name="Darlene Robertson"
-            description="Tom is a big hurry."
-            img="src/imgs/Placehpolder.png"
-            profilePic="src/imgs/profile-pic-5.png"
-            time="23s"
-            user="@johndoe"
+            name="cloutexhibition"
+            description="YPIP dasturining bu yilgi sezoni ham o’z nihoyasiga yetmoqda. Mentorlik davomida talaba va yangi bitiruvchilarni o’sayotganini ko’rib hursand bo’ladi odam."
+            profilePic="src/imgs/cloutexhibition.png"
+            time="22m"
+            user="@RajLahoti"
+          />
+
+          <Tweet
+            name="CreativePhoto"
+            description="Обетда.....Кечиринглар"
+            img="src/imgs/post1.png"
+            profilePic="src/imgs/CreativePhoto.png"
+            time="1h"
+            user="@cloutexhibition"
           />
 
         </div>
@@ -107,20 +114,21 @@ export function Home() {
               </NewsItem>
             </List>
 
-            <List title="Who to follow">
+            <List title="You might like">
               <Follow
-                img="src/imgs/profile-pic-2.png"
-                name="Bessie Cooper"
-                user="@alessandroveronezi"
+                img="src/imgs/profile-pic-7-mushtariy.png"
+                name="Mushtariy"
+                user="@Mushtar565266"
               />
               <Follow
-                img="src/imgs/profile-pic-3.png"
-                name="Jenny Wilson"
-                user="@gabrielcantarin"
+                img="src/imgs/profile-pic-6-Shuhratbek.png"
+                name="Shuhratbek"
+                user="@mrshukhrat"
               />
             </List>
 
-            <Text color="gray">Terms of Service Privacy Policy Cookie Policy Ads info More © 2021 Twitter, Inc.</Text>
+            <Text color="gray">Terms of Service Privacy Policy Cookie Policy</Text>
+            <Text color="gray">Imprint Ads Info More... © 2021 Twitter, Inc.</Text>
           </div>
         </div>
       </main>
