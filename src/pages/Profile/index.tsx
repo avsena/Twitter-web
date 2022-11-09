@@ -12,7 +12,7 @@ import { Spacer } from "../../components/Spacer/Spacer";
 import { Text } from "../../components/Text/Text";
 import { Tweet, TweetProps } from "../../components/Tweet/Tweet";
 import { useFeed } from "../../context/FeedContext/FeedContext";
-
+//o import do Profile está dando erro
 
 import './styles.css';
 
@@ -36,47 +36,43 @@ export function Profile() {
             <Header.Text>
             <Header.Text>
               <Heading>
-                Name
+                <strong>Bobur</strong>
               </Heading>
             </Header.Text>
-            9 Tweets
+            1,070 Tweets
             </Header.Text>
             <Header.RightIcon />
           </Header.Root>
 
-          <Post img="src/imgs/profile-pic-1.png" />
+          <Post img="src/imgs/Bobur.png" />
 
           <Spacer />
 
-          {
-            tweets?.map((tweet, index) => (
-              <Tweet key={index}
-                description={tweet.description}
-                img={tweet.img || ''}
-                name={tweet.name}
-                profilePic={tweet.profilePic}
-                time={tweet.time}
-                user={tweet.user}
-              />
-            ))
-          }
-
           <Tweet
-            name="Devon Lane"
-            description="Tom is a big hurry."
-            img="src/imgs/Container.png"
-            profilePic="src/imgs/profile-pic-4.png"
-            time="23s"
-            user="@johndoe"
+            name="Bobur"
+            description="4-kursni tugatgunimcha kamida bitta biznesim bo'lishini, uylanish uchun moddiy jihatdan to'la-to'kis tayyor bo'lishni, sog'lik va jismoniy holatni normallashtirishni reja qildim"
+            profilePic="src/imgs/bobur.png"
+            time="Apr 1"
+            user="@bobur_mavlonov"
           />
 
           <Tweet
-            name="Darlene Robertson"
-            description="Tom is a big hurry."
-            img="src/imgs/Placehpolder.png"
-            profilePic="src/imgs/profile-pic-5.png"
-            time="23s"
-            user="@johndoe"
+            name="Bobur"
+            description="Bizda shunaqa bir illat bor: gap bo'lsa bo'ldi, nima deyayotganimizga qarab ham o'tirmaymiz. 
+            Bitta biznes trener nito gapirib qo'ysa, hamma biznes trenerlar yomonga chiqadi slishkom aqlli odamlar nazdida. 
+            Gap faqat biznes trenerlar haqida emas."
+            profilePic="src/imgs/bobur.png"
+            time="Apr 1"
+            user="@bobur_mavlonov"
+          />
+
+          <Tweet
+            name="Bobur"
+            description="A bo'pti maskamasman"
+            img="src/imgs/post2.png"
+            profilePic="src/imgs/bobur.png"
+            time="Apr 1"
+            user="@bobur_mavlonov"
           />
 
         </div>
@@ -98,30 +94,24 @@ export function Profile() {
               />
             </List>
 
-            <List title="What's happening">
+            <List title="Trends for you">
               <NewsItem
-                hashtag="#covid19"
-                img="src/imgs/news-item-1.png"
-                subject="COVID 19"
-                time="Last night"
+                img="src/imgs/Vector.png"
+                subject="Trending in Germany"
               >
-                England’s Chief Medical Officer says the UK is at the most dangerous time of the pandemic
+               <strong>Revolution</strong> 
               </NewsItem>
               <NewsItem
-                hashtag="#trump"
-                img="src/imgs/news-item-2.png"
-                subject="US news"
-                time="4h ago"
+                img="src/imgs/Vector.png"
+                subject="Trending in Germany"
               >
-                Parler may go offline following suspensions by Amazon, Apple and Google
+               <strong>Revolution</strong>
               </NewsItem>
               <NewsItem
-                hashtag="#sport"
-                img="src/imgs/news-item-3.png"
-                subject="India"
-                time="1h ago"
+                img="src/imgs/Vector.png"
+                subject="Trending in Germany"
               >
-                India vs Australia: India hold on to earn a draw on Day 5 in Sydney Test
+               <strong>Revolution</strong>
               </NewsItem>
             </List>
 
