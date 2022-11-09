@@ -1,21 +1,22 @@
 import { Meta, StoryObj } from '@storybook/react';
 import { Profile, ProfileProps } from './Profile';
-//import { withRouter } from 'storybook-addon-react-router-v6';
 
 export default {
   title: 'Components/Profile',
   component: Profile,
-  //decorators: [withRouter],
+
   args: {
-    banner: 'src/imgs/banner.png',
-    profilePic: 'src/imgs/profile-pic-1.png',
-    name: 'Davide Biscuso',
-    user: '@biscuttu',
-    bio: 'Product Designer',
-    location: 'London',
-    joined: 'September 2011',
-    following: 568,
-    followers: 72,
+    banner: 'src/imgs/banner1.png',
+    profilePic: 'src/imgs/bobur.png',
+    name: 'Bobur',
+    user: '@bobur_mavlonov',
+    bio: '',
+    location: 'Mashag´daman',
+    linked: 't.me/boburjon_mavlonov',
+    born: 'November 24, 2020',
+    joined: 'May 2020',
+    following: 47,
+    followers: 67,
   },
   argType: {},
 } as Meta<ProfileProps>
