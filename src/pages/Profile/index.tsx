@@ -83,14 +83,14 @@ export function Profile() {
 
             <List title="You might like">
               <Follow
-                img="src/imgs/profile-pic-2.png"
-                name="Bessie Cooper"
-                user="@alessandroveronezi"
+                img="src/imgs/profile-pic-7-mushtariy.png"
+                name="Mushtariy"
+                user="@Mushtar565266"
               />
               <Follow
-                img="src/imgs/profile-pic-3.png"
-                name="Jenny Wilson"
-                user="@gabrielcantarin"
+                img="src/imgs/profile-pic-6-Shuhratbek.png"
+                name="Shuhratbek"
+                user="@mrshukhrat"
               />
             </List>
 

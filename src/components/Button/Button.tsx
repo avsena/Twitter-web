@@ -28,7 +28,7 @@ export function Button({size = 'default', children, asChild, style = 'fill', col
             'bg-white text-black hover:bg-dark-8': (color === 'white' && style === 'fill'),
           },
           {
-            'py-2 px-3.5 text-white border-2 border-black bg-transparent bg-black hover:bg-blue-1 hover:text-white': (color === 'blue' && style === 'outline'),
+            'py-2 px-3.5 text-blue-1 border-2 border-blue-1 bg-transparent hover:bg-blue-1 hover:text-white': (color === 'blue' && style === 'outline'),
             'py-2 px-3.5 text-white border-2 border-white bg-transparent hover:bg-white/20': (color === 'white' && style === 'outline'),
           },
           {
