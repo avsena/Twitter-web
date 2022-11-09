@@ -5,10 +5,8 @@ export default {
   title: 'Components/NewsItem',
   component: NewsItem,
   args: {
-    subject: 'COVID 19',
-    time: 'Last night',
-    hashtag: '#covid19',
-    children: 'England’s Chief Medical Officer says the UK is at the most dangerous time of the pandemic',
+    subject: 'Trending in Germany',
+    children: '',
     img: 'src/imgs/news-item-1.png'
   },
   argTypes: {}
