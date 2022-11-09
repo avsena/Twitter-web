@@ -39,7 +39,7 @@ export function Home() {
             <Header.RightIcon />
           </Header.Root>
 
-          <Post img="src/imgs/profile-pic-1.png" />
+          <Post img="src/imgs/Bobur.png" />
 
           <Spacer />
 
@@ -87,30 +87,24 @@ export function Home() {
           <div className="flex flex-col gap-4 justify-start items-start py-2.5 px-7">
             <SearchBar />
 
-            <List title="What's happening">
+            <List title="Trends for you">
               <NewsItem
-                hashtag="#covid19"
-                img="src/imgs/news-item-1.png"
-                subject="COVID 19"
-                time="Last night"
+                img="src/imgs/Vector.png"
+                subject="Trending in Germany"
               >
-                England’s Chief Medical Officer says the UK is at the most dangerous time of the pandemic
+               <strong>Revolution</strong> 
               </NewsItem>
               <NewsItem
-                hashtag="#trump"
-                img="src/imgs/news-item-2.png"
-                subject="US news"
-                time="4h ago"
+                img="src/imgs/Vector.png"
+                subject="Trending in Germany"
               >
-                Parler may go offline following suspensions by Amazon, Apple and Google
+               <strong>Revolution</strong>
               </NewsItem>
               <NewsItem
-                hashtag="#sport"
-                img="src/imgs/news-item-3.png"
-                subject="India"
-                time="23h ago"
+                img="src/imgs/Vector.png"
+                subject="Trending in Germany"
               >
-                India vs Australia: India hold on to earn a draw on Day 5 in Sydney Test
+               <strong>Revolution</strong>
               </NewsItem>
             </List>
 
