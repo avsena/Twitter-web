@@ -17,7 +17,7 @@ function HeaderRoot({ children }: HeaderTextProps) {
 function HeaderLeftIcon() {
   return (
     <div className="hover:bg-blue-1/10 active:bg-blue-1/20  box-border p-2 rounded-full cursor-pointer">
-      <Icon icon='back' color="blue" />
+      <Icon icon='back' color="black" />
     </div>
   )
 }
