@@ -5,12 +5,12 @@ export default {
   title: 'Components/Tweet',
   component: Tweet,
   args: {
-    name: 'Devon Lane',
-    user: '@johndoe',
-    time: '23s',
+    name: 'Bobur',
+    user: '@bobur_mavlonov',
+    time: 'Now',
     description: 'Tom is a big hurry.',
     img: 'src/imgs/Container.png',
-    profilePic: 'src/imgs/profile-pic-4.png'
+    profilePic: 'src/imgs/bobur.png'
   }
 } as Meta<TweetProps>
 
