@@ -10,12 +10,14 @@ export interface ProfileProps {
   user: string;
   bio: string;
   location: string;
+  linked: string;
+  born: string;
   joined: string;
   following: number;
   followers: number;
 }
 
-export function Profile({ banner, profilePic, name, user, bio, location, joined, following, followers }: ProfileProps) {
+export function Profile({ banner, profilePic, name, user, bio, location, linked, born, joined, following, followers }: ProfileProps) {
   return (
     <div className="profile">
       <header className="relative">
@@ -31,13 +33,23 @@ export function Profile({ banner, profilePic, name, user, bio, location, joined,
       </Text>
 
       <Text size="lg" className="mb-2.5" asChild>
-        <p>{ bio }</p>
+        <p>UX&UI designer at { bio }<Text color="blue" size="sm" className="hover:underline">{ bio }@abutechuz</Text></p>
       </Text>
 
       <div className="profile__info flex items-center gap-x-2 mb-2.5">
         <div className="profile__location flex items-center gap-x-1">
           <Icon size="1.125rem" icon='location' color="gray"/>
           <Text size="lg" color="gray">{ location }</Text>
+        </div>
+
+        <div className="profile_born flex items-center gap-x-1">
+        <Icon size="1.125rem" icon='ellipses' color="gray"/>
+          <Text size="lg" color="gray"> { linked }</Text>
+        </div>
+
+        <div className="profile_born flex items-center gap-x-1">
+        <Icon size="1.125rem" icon='calendar' color="gray"/>
+          <Text size="lg" color="gray">Born { born }</Text>
         </div>
 
         <div className="profile__join flex items-center gap-x-1">
