@@ -52,8 +52,8 @@ export function Post({ img }: PostProps) {
     const text = document.querySelector(".post__text") as Element;
 
     const data = {
-      name: 'Davide Biscuso',
-      user: '@biscuttu',
+      name: 'Bobur',
+      user: '@bobur_mavlonov',
       time: 'now',
       description: text?.textContent,
       profilePic: img,

@@ -5,7 +5,7 @@ export default {
   title: 'Components/Post',
   component: Post,
   args: {
-    img: "src/imgs/profile-pic-1.png"
+    img: "src/imgs/bobur.png"
   },
   argType: {},
 } as Meta<PostProps>
