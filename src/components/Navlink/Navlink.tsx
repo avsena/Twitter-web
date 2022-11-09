@@ -15,8 +15,8 @@ export function Navlink({ icon, iconFill, children, active, page }: NavlinkProps
   return (
     <span>
       <a href={page} className="inline-flex gap-x-5 focus:bg-dark-7 /30 rounded-full p-2.5 pr-7">
-        <Icon icon={ active ? iconFill : icon } color={ active ? 'blue' : 'black' } />
-        <Heading color={ active ? 'blue' : 'black' }>{ children }</Heading>
+        <Icon icon={ active ? iconFill : icon } color={ active ? 'black' : 'black' } />
+        <Heading color={ active ? 'black' : 'black' }>{ children }</Heading>
       </a>
     </span>
   )
