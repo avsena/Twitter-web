@@ -3,7 +3,7 @@ import { Icon } from "../Icon/Icon";
 import { Navlink } from "../Navlink/Navlink";
 import { ShortProfile } from "../ShortProfile/ShortProfile";
 
-import profilePic from "../../imgs/profile-pic-1.png";
+import profilePic from "../../imgs/bobur.png";
 
 import './navbar.css';
 
