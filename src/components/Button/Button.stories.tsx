@@ -5,6 +5,7 @@ export default {
   title: 'Components/Button',
   component: Button,
   args: {
+    content: "Log in",
     children: 'Button',
     size: 'default',
     style: 'fill',
