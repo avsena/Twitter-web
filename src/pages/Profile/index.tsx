@@ -12,7 +12,6 @@ import { Spacer } from "../../components/Spacer/Spacer";
 import { Text } from "../../components/Text/Text";
 import { Tweet, TweetProps } from "../../components/Tweet/Tweet";
 import { useFeed } from "../../context/FeedContext/FeedContext";
-//o import do Profile está dando erro
 import { Profile as ProfileComponent } from '../../components/Profile/Profile';
 
 import './styles.css';
