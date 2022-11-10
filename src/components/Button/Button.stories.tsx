@@ -5,6 +5,7 @@ export default {
   title: 'Components/Button',
   component: Button,
   args: {
+    nextin: "Next",
     content: "Log in",
     children: 'Button',
     size: 'default',
