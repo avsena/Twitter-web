@@ -2,8 +2,9 @@ import {Button} from "../../components/Button/Button"
 import { Link } from "react-router-dom"
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
-
-
+import { Heading } from "../../components/Heading/Heading"
+import Input from "../../components/Input"
+import { Text } from "../../components/Text/Text"
 
 export interface Tweet  {
     id_tweet : string,
@@ -188,26 +189,38 @@ function Login(){
 
     }
 
-    return(
-        <section className="login">
-            <img src="" alt="" className="logo-twitter" />
-            <p className="title_login">Log in to Twitter</p>
-            <input type="text" name="login" placeholder="Phone number, email addres" onChange={handleUser}/>
-            <input type="password" name="password" placeholder="Password" onChange={handleUser}/>
-            <Button
-                children="Log in"
-                style="fill"
-                color="blue"
-                size="default"
-                onClick = {getLogin}
-                
-            />
-            <div className="links_login">
-                <Link to="">Forgot Password</Link>
-                <Link to = "/signup">Signup on Twitter</Link>
+    return (
+        <div className="h-screen w-full flex justify-center items-center bg-white dark:bg-dark-1">
+          <div className="grid w-[450px] max-w-[100%]">
+    
+            <Text>Log in to Twitter</Text>
+    
+            <form>
+              <input
+                type="text"
+                placeholder="Phone or mail"
+                />
+    
+              <input
+                type="password"
+                placeholder="Password"
+              />
+    
+             <Link to="/home"><Button size="big">Log In</Button></Link>
+            </form>
+    
+            <div className="flex justify-between mt-10">
+              <Link to="../">
+                <Text color="blue" className="hover:underline">Forgot password?</Text>
+              </Link>
+    
+              <Link to="../signup">
+                <Text color="blue" className="hover:underline">Sign up to Twitter</Text>
+              </Link>
             </div>
-        </section>
-    )
+          </div>
+        </div>
+      )
 }
 
 export default Login
