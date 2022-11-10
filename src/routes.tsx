@@ -3,10 +3,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { DarkModeContextProvider } from './context/DarkModeContext/DarkModeContext'
 import { FeedContextProvider } from './context/FeedContext/FeedContext'
 import { Home } from './pages/Home'
-import { Lists } from './pages/Lists'
 import { Profile } from './pages/Profile'
-import './styles/global.css'
+//import { PageNotFound } from './pages/PageNotFound'
 
+import './styles/global.css'
 
 export default function AppRouter() {
     return (
@@ -17,7 +17,6 @@ export default function AppRouter() {
                     <Route path='/' element={<Home/>} />
                     <Route path='/home' element={<Home/>} />
                     <Route path='/profile' element={<Profile/>} />
-                    <Route path='/lists' element={<Lists/>} />
                  </Routes>
                 </FeedContextProvider>
             </DarkModeContextProvider>
