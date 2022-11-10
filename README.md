@@ -34,3 +34,11 @@ npm run dev
 - [Vite](https://vitejs.dev/)
 - [Postcss](https://postcss.org/)
 - [Radix-Slot](https://www.radix-ui.com/docs/primitives/utilities/slot)
+
+## Screenshots do projeto:
+
+*Tela Home*
+![image](https://user-images.githubusercontent.com/33937487/201116884-d25fdf64-80a2-45b9-8f33-c140130b4dd9.png)
+
+*Tela Profile*
+![image](https://user-images.githubusercontent.com/33937487/201117443-60eb0061-2112-4cc6-bf20-81bf864d87f6.png)
