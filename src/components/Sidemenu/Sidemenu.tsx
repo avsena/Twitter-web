@@ -2,6 +2,7 @@ import { Button } from "../Button/Button";
 import { Icon } from "../Icon/Icon";
 import { Navlink } from "../Navlink/Navlink";
 import { ShortProfile } from "../ShortProfile/ShortProfile";
+import { Link } from "react-router-dom";
 
 import profilePic from "../../imgs/bobur.png";
 
@@ -22,7 +23,7 @@ export function Sidemenu({ currentPage }: SidemenuProps) {
             icon="home"
             iconFill="home-fill"
             active={ currentPage === 'home' }
-            page="/"
+            page="/home"
             >
             Home
           </Navlink>
@@ -91,7 +92,8 @@ export function Sidemenu({ currentPage }: SidemenuProps) {
           </Navlink>
         </div>
 
-        <Button size="big" className="w-auto self-start mr-5 box-border">Tweet</Button>
+
+        <Link to={"/"}><Button size="big" className="w-auto self-start mr-5 box-border">Tweet</Button></Link>
 
         <ShortProfile profilePic={profilePic} />
       </div>
