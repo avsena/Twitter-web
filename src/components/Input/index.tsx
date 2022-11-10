@@ -1,6 +1,6 @@
 import {InputHTMLAttributes} from "react"
 
-interface inputPropos extends InputHTMLAttributes<HTMLInputElement> {
+interface InputPropos extends InputHTMLAttributes<HTMLInputElement> {
     maxlength?: string,
     placeholder?: string,
     className: string,
@@ -9,7 +9,7 @@ interface inputPropos extends InputHTMLAttributes<HTMLInputElement> {
   
 }
 
-function Input(props: inputPropos){
+function Input(props: InputPropos){
     return(
         <input {...props} />
     )
