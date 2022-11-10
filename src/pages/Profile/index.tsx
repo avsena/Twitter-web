@@ -13,6 +13,7 @@ import { Text } from "../../components/Text/Text";
 import { Tweet, TweetProps } from "../../components/Tweet/Tweet";
 import { useFeed } from "../../context/FeedContext/FeedContext";
 //o import do Profile está dando erro
+import { Profile as ProfileComponent } from '../../components/Profile/Profile';
 
 import './styles.css';
 
@@ -34,17 +35,28 @@ export function Profile() {
           <Header.Root>
             <Header.LeftIcon />
             <Header.Text>
-            <Header.Text>
-              <Heading>
-                <strong>Bobur</strong>
-              </Heading>
-            </Header.Text>
-            1,070 Tweets
+              <Header.Text>
+                <Heading>
+                  <strong>Bobur</strong>
+                </Heading>
+                1,070 Tweets
+              </Header.Text>
             </Header.Text>
             <Header.RightIcon />
           </Header.Root>
 
-          <Post img="src/imgs/Bobur.png" />
+          <ProfileComponent
+            banner="src\imgs\banner1.png"
+            profilePic="src/imgs/bobur.png"
+            name="Bobur"
+            user="@bobur_mavlonov"
+            bio="UX&UI designer at "
+            location="Mashag´daman"
+            linked="t.me/boburjon_mavlonov"
+            born="November 24, 2000"
+            joined="May 2020"
+            following={67}
+            followers= {47} />
 
           <Spacer />
 
@@ -99,25 +111,25 @@ export function Profile() {
                 img="src/imgs/Vector.png"
                 subject="Trending in Germany"
               >
-               <strong>Revolution</strong> 
+                <strong>Revolution</strong>
               </NewsItem>
               <NewsItem
                 img="src/imgs/Vector.png"
                 subject="Trending in Germany"
               >
-               <strong>Revolution</strong>
+                <strong>Revolution</strong>
               </NewsItem>
               <NewsItem
                 img="src/imgs/Vector.png"
                 subject="Trending in Germany"
               >
-               <strong>Revolution</strong>
+                <strong>Revolution</strong>
               </NewsItem>
             </List>
 
-            
 
-            <Text color="gray">PROFILE: Terms of Service Privacy Policy Cookie Policy Ads info More © 2021 Twitter, Inc.</Text>
+
+            <Text color="gray">Terms of Service Privacy Policy Cookie Policy Ads info More © 2021 Twitter, Inc.</Text>
           </div>
         </div>
       </main>
