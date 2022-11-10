@@ -1,6 +1,7 @@
 import { Button } from "../Button/Button";
 import { Heading } from "../Heading/Heading";
 import { Text } from "../Text/Text";
+import { Link } from "react-router-dom";
 
 import './footer.css';
 
@@ -19,8 +20,8 @@ export function Footer(){
         </div>
 
         <div className="footer__btnGroup grid grid-cols-2 gap-x-3">
-          <Button style="outline" color="white">Log in</Button>
-          <Button color="white">Sign Up</Button>
+        <Link to="/login"><Button style="outline" color="white">Log in</Button></Link>
+          <Link to="/signup"><Button style="outline" color="white"> Sign Up</Button></Link>
         </div>
       </div>
     </footer>
