@@ -25,6 +25,7 @@ module.exports = {
         'blue-1': '#1DA1F2',
         'blue-2': '#1A8CD8',
         'flutuar': '#00BFFF',
+        'green': '#0CB245',
         black: '#0F1419',
         red: '#F4245E',
         white: '#FFFFFF',
